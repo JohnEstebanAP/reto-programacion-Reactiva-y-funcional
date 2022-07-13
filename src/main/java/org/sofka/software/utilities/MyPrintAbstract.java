@@ -84,7 +84,34 @@ public abstract class MyPrintAbstract {
 
 
     String message = "\n{0}\n {1} {2}\n{0}\n";
-    for (int i = 0; i < (messaje1.length() + message2.length())*0.10; i++){
+    for (int i = 0; i < (messaje1.length() + message2.length())*0.15; i++){
+      separator = separator.concat(SEPARATOR_2);
+    }
+
+    logger.log(
+        Level.INFO,
+        message,
+        new Object[] { separator, messaje1, message2 });
+  }
+
+  /**
+   * [Imprime en consola dos mensajes.
+   *
+   * ej.:
+   * logName("Juan","Hola como estas");
+   * ]
+   *
+   * @param messaje1 elemento de tipo String que contiene un mensaje inicial.
+   * @param message2 elemento de tipo String que contiene un mensaje final.
+   * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+   * @since [1.0.0]
+   */
+  public static void logMessage2(String messaje1, String message2) {
+    String separator =  "";
+
+
+    String message = "\n{0}\n {1} {2}\n{0}\n";
+    for (int i = 0; i < (messaje1.length() + message2.length())*0.005; i++){
       separator = separator.concat(SEPARATOR_2);
     }
 

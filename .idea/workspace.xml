@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="140cc582-6de6-432a-85b6-61330359682f" name="Changes" comment="ejercicio1 OperadorC">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorE.java" afterDir="false" />
+    <list default="true" id="140cc582-6de6-432a-85b6-61330359682f" name="Changes" comment="ejercicio1 OperadorD y E">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/EstadosDelosCorreos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/utilities/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/utilities/utilsEmails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/ImprimirCorreos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/ImprimirCorreos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/utilities/MyPrintAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/utilities/MyPrintAbstract.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657695410623</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ejercicio1 OperadorD y E">
+      <created>1657696837567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657696837567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +138,7 @@
     <MESSAGE value="ejercicio1 OperadorA" />
     <MESSAGE value="ejercicio1 OperadorB" />
     <MESSAGE value="ejercicio1 OperadorC" />
-    <option name="LAST_COMMIT_MESSAGE" value="ejercicio1 OperadorC" />
+    <MESSAGE value="ejercicio1 OperadorD y E" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercicio1 OperadorD y E" />
   </component>
 </project>

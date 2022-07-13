@@ -1,5 +1,6 @@
 package org.sofka.software.operadores;
 
+import org.sofka.software.utilities.Email;
 import org.sofka.software.utilities.MyPrintAbstract;
 
 import java.util.List;
@@ -21,6 +22,23 @@ public class  ImprimirCorreos extends MyPrintAbstract {
                            .concat(correo.toString());
                 }).toString();
 
-        logMessage(message ,correosConcatenados);
+        logMessage2(message ,correosConcatenados);
+    }
+
+    public static String cadenaDeCorreos(List<Email> correos){
+
+        AtomicReference<Integer> contador = new AtomicReference<>(1);
+
+        return correos.stream()
+                .map(email -> email.toString())
+                .reduce("", ( acumulador, correo) ->  {
+                    String index = (contador.getAndSet(contador.get() + 1)).toString();
+                   var mensajeConcatenado=  acumulador.toString()
+                           .concat("\n")
+                           .concat(index)
+                           .concat(": ")
+                           .concat(correo.toString()).toString();
+                   return mensajeConcatenado;
+                });
     }
 }

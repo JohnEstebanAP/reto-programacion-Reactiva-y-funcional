@@ -1,6 +1,8 @@
 package org.sofka.software.operadores;
 
 
+import org.sofka.software.utilities.Email;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

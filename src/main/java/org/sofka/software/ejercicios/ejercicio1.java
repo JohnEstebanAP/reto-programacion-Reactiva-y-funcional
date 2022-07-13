@@ -5,24 +5,13 @@ import org.sofka.software.utilities.Start;
 
 import java.util.List;
 
+import static org.sofka.software.utilities.utilsEmails.consultarEmails;
+import static org.sofka.software.utilities.utilsEmails.consultarEmailsYEstados;
+
 
 public class ejercicio1 extends Start {
 
-    List<String> correos = List.of(
-            "esteban.ea145@gmail.com",
-            "pedro@gmail.com",
-            "j.alvarez2744@gmail.com",
-            "johnEsteban@",
-            "juangmail.com",
-            "carlos@hotmail.com",
-            "carlos@hotmail.com",
-            "juan@hotmail.com",
-            "juan@hotmail.com",
-            "juan@hotmail.com",
-            "juan@hotmail.com",
-            "juan@outlook.com",
-            "juan@outlook.com"
-    );
+    List<String> correos = consultarEmails();
 
     @Override
     public void start() {
@@ -40,5 +29,8 @@ public class ejercicio1 extends Start {
 
         OperadorE operadorE = new OperadorE(correos);
         operadorE.controladorOperadorE();
+
+        EstadosDelosCorreos estadosDelosCorreos = new EstadosDelosCorreos(consultarEmailsYEstados());
+        estadosDelosCorreos.controladorOperadorEstados();
     }
 }
