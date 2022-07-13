@@ -1,6 +1,7 @@
 package org.sofka.software.ejercicios;
 
 import org.sofka.software.operadores.OperadorA;
+import org.sofka.software.operadores.OperadorB;
 import org.sofka.software.utilities.Start;
 
 import java.util.List;
@@ -19,12 +20,19 @@ public class ejercicio1 extends Start {
             "juan@hotmail.com",
             "juan@hotmail.com",
             "juan@hotmail.com",
-            "juan@hotmail.com"
+            "juan@hotmail.com",
+            "juan@outlook.com",
+            "juan@outlook.com",
+            "juan@outlook.com"
     );
 
     @Override
     public void start() {
         OperadorA  operadorA = new OperadorA(correos);
         operadorA.controladorOperadorA();
+
+        OperadorB operadorB = new OperadorB(correos);
+        operadorB.controladorOperadorB();
+
     }
 }

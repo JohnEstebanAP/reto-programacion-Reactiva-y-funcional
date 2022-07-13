@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="140cc582-6de6-432a-85b6-61330359682f" name="Changes" comment="estructura inicial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/ImprimirCorreos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorA.java" afterDir="false" />
+    <list default="true" id="140cc582-6de6-432a-85b6-61330359682f" name="Changes" comment="ejercicio1 OperadorA">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/ImprimirCorreos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/ImprimirCorreos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/OperadorA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/sofka/software" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sofka.software.operadores" />
     </key>
   </component>
   <component name="RunManager">
@@ -85,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657680839614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ejercicio1 OperadorA">
+      <created>1657688291255</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657688291255</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="estructura inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="estructura inicial" />
+    <MESSAGE value="ejercicio1 OperadorA" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercicio1 OperadorA" />
   </component>
 </project>

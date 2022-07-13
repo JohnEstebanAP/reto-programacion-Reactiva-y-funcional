@@ -6,22 +6,21 @@ import java.util.stream.Collectors;
 
 public class OperadorA {
 
-    private List list;
+    private final List<String> list;
 
-    public OperadorA(List list) {
+    public OperadorA(List<String> list) {
         this.list = list;
     }
 
     public void controladorOperadorA(){
-        ImprimirCorreos.imprimirCorreos(list);
-        List correosFiltrados = eliminarCorreosRepetidos();
-        ImprimirCorreos.imprimirCorreos(correosFiltrados);
-
+        ImprimirCorreos.imprimirCorreos(list, "Correos Repetidos" );
+        List<String> correosFiltrados = eliminarCorreosRepetidos();
+        ImprimirCorreos.imprimirCorreos(correosFiltrados, "Correos Filtrados");
     }
 
     ///Distinct: para ver si hay correo repetidos, si hay correos repetidos eliminarlos
-    public List eliminarCorreosRepetidos(){
-        return (List) list.stream().distinct().collect(Collectors.toList());
+    public List<String> eliminarCorreosRepetidos(){
+        return (List<String>) list.stream().distinct().collect(Collectors.toList());
     }
 
 }

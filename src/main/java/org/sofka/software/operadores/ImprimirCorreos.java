@@ -7,20 +7,20 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class  ImprimirCorreos extends MyPrintAbstract {
 
-    public static void imprimirCorreos(List correos){
+    public static void imprimirCorreos(List<String> correos, String message){
 
         AtomicReference<Integer> contador = new AtomicReference<>(1);
 
         var correosConcatenados = correos.stream()
-                .reduce(( acumulador, correo) ->  {
+                .reduce("", ( acumulador, correo) ->  {
                     String index = (contador.getAndSet(contador.get() + 1)).toString();
                    return  acumulador.toString()
                            .concat("\n")
                            .concat(index)
                            .concat(": ")
                            .concat(correo.toString());
-                }).get().toString();
+                }).toString();
 
-        log(correosConcatenados);
+        logMessage(message ,correosConcatenados);
     }
 }
