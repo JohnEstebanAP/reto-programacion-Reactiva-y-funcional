@@ -1,5 +1,8 @@
 package org.sofka.software;
 
+import org.sofka.software.ejercicios.ejercicio1;
+import org.sofka.software.ejercicios.ejercicio2;
+import org.sofka.software.ejercicios.ejercicio3;
 import org.sofka.software.utilities.Start;
 
 import java.awt.*;
@@ -29,10 +32,10 @@ public class Main extends Menu {
      * @since [1.2.0]
      */
     public static void main(String[] args) {
-        List<Integer> list1 = List.of(2,35,44,8,44);
-        List<Integer> list2 = List.of(2,5,44,0,6);
 
-        puntos(new Sumar(list1, list2));
+        puntos(new ejercicio1());
+        puntos(new ejercicio2());
+        puntos(new ejercicio3());
         startMenu();
     }
 
@@ -46,7 +49,7 @@ public class Main extends Menu {
         List<String> elemenst = new ArrayList<>();
 
         final String SEPARATOR = "--------------------------------------------------------------------------";
-        final String MENU = " ********************************* Calculadora *********************************";
+        final String MENU = " ********************************* Reto programación reactiva y funcional *********************************";
         final String MESSAGE = "  Por favor seleccione la opción que desea ejecutar";
         final String OPCIONES = "  ingrese un número para indicar un opción: ";
 
@@ -67,7 +70,7 @@ public class Main extends Menu {
     }
 
     /**
-     * [Imprime en consola las instrucciones para ingresar un número y comprobar que es un Entero de no ser asi se repite la función]
+     * [Captura un numera ingresado por consola y comprobar que es un Entero de no ser asi se repite la función]
      *
      * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
      * @since [1.2.0]

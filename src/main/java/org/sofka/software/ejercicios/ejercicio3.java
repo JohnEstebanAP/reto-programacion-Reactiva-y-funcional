@@ -1,4 +1,13 @@
 package org.sofka.software.ejercicios;
 
-public class ejercicio3 {
+import org.sofka.software.utilities.Start;
+
+public class ejercicio3 extends Start {
+
+    @Override
+    public void start() {
+
+
+
+    }
 }
