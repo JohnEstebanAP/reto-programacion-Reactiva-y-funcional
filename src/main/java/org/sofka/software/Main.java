@@ -48,8 +48,8 @@ public class Main extends Menu {
     public static void startMenu() {
         List<String> elemenst = new ArrayList<>();
 
-        final String SEPARATOR = "--------------------------------------------------------------------------";
-        final String MENU = " ********************************* Reto programación reactiva y funcional *********************************";
+        final String SEPARATOR = "-----------------------------------------------------------------------------------------------";
+        final String MENU = " *************************** Reto programación reactiva y funcional ***************************";
         final String MESSAGE = "  Por favor seleccione la opción que desea ejecutar";
         final String OPCIONES = "  ingrese un número para indicar un opción: ";
 

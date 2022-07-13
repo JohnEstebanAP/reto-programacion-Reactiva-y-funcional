@@ -2,6 +2,7 @@ package org.sofka.software.ejercicios;
 
 import org.sofka.software.operadores.OperadorA;
 import org.sofka.software.operadores.OperadorB;
+import org.sofka.software.operadores.OperadorC;
 import org.sofka.software.utilities.Start;
 
 import java.util.List;
@@ -13,8 +14,8 @@ public class ejercicio1 extends Start {
             "esteban.ea145@gmail.com",
             "pedro@gmail.com",
             "j.alvarez2744@gmail.com",
-            "johnEsteban.com",
-            "juan@gmail.com",
+            "johnEsteban@",
+            "juangmail.com",
             "carlos@hotmail.com",
             "carlos@hotmail.com",
             "juan@hotmail.com",
@@ -34,5 +35,7 @@ public class ejercicio1 extends Start {
         OperadorB operadorB = new OperadorB(correos);
         operadorB.controladorOperadorB();
 
+        OperadorC operadorC = new OperadorC(correos);
+        operadorC.controladorOperadorC();
     }
 }
