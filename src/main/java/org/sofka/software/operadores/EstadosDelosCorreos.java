@@ -8,14 +8,39 @@ import java.util.stream.Collectors;
 import static org.sofka.software.operadores.ImprimirCorreos.cadenaDeCorreos;
 import static org.sofka.software.utilities.MyPrintAbstract.*;
 
+/**
+ * [Clase de EstadoDeLosCorreos]
+ * En la misma lista determinar si se envió un
+ * correo o no a cada uno de los correos,
+ * si se le envió cambiar el estado en la lista,
+ * todo esto respetando la inmutabilidad.
+ *
+ * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+ * @version 1.0.0
+ * @since Esta presente desde la version 1.0.0
+ */
 public class EstadosDelosCorreos {
 
   private final List<Email> list;
 
+  /**
+   * [Método Constructor]
+   * @param list Recibe como parámetro una Lista de Email de tipo List<Email>.
+   */
   public EstadosDelosCorreos(List<Email> list) {
     this.list = list;
   }
 
+  /**
+   * [Método Controlador]
+   * Encargado de gestionar la operación de cambiar estado
+   * Imprime los correos enviados y nos muestra en la impresión
+   * la lista detalla da de correos a los cuales se le
+   * enviaron mensajes y tiene el estado activo y
+   * cuáles coreos no han recibido mensaje.
+   * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+   * @since [1.0.0]
+   */
   public void controladorOperadorEstados() {
 
     String correo1 = "Se a enviado un correo a el email: esteban.ea145@gmail.com";
@@ -39,6 +64,16 @@ public class EstadosDelosCorreos {
         new Object[] {correo1, correo2, correo3, correo4, correo5, cadenaDeCorreos(actualizacionCorreos5)});
   }
 
+  /**
+   * [Método representar el evento de enviar un correo]
+   * cuando este evento acure el estado de la lisa de correos
+   * debe cambiar y colocarse el correo en un estado activo
+   * @param email String
+   * @param list List<Email>
+   * @return List<Email>
+   * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+   * @since [1.0.0]
+   */
   public List<Email> enviarCorreo(String email, List<Email> list) {
     return list.stream()
         .map(
@@ -51,6 +86,13 @@ public class EstadosDelosCorreos {
         .toList();
   }
 
+  /**
+   * [Método para eliminar los correos repetidos en la Lista de correos]
+   * @param list List<Email>
+   * @return List<Email>
+   * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+   * @since [1.0.0]
+   */
   public List<Email> eliminarCorreosRepetidos(List<Email> list){
     List<Email> listEmails = list.stream()
             .map(email -> email.email())

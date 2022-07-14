@@ -6,6 +6,13 @@ import java.util.stream.Collectors;
 
 import static org.sofka.software.utilities.MyPrintAbstract.logMessage;
 
+/**
+ * [Clase encargada imprimir la cantidad de correos en una lista]
+ *
+ * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+ * @version 1.0.0
+ * @since Esta presente desde la version 1.0.0
+ */
 public class OperadorE {
 
     private final List<String> list;
@@ -14,6 +21,10 @@ public class OperadorE {
         this.list = list;
     }
 
+    /**
+     * [Método Controlador]
+     * encargado de imprimir la cantidad de coreos en una lista deacuerdo a su dominio [Gmail, Hotmail, etc]
+     */
     public void controladorOperadorE(){
 
         Long correosGmail = dominioDeGmail();
@@ -26,13 +37,27 @@ public class OperadorE {
         logMessage(String.valueOf(correosOutlook), "Correos de Outlook");
     }
 
-    //Filtro: para saber si hay correos con dominio gmail, hotmail y outlook.
+    /**
+     * Método para saber la cantidad de correos que hay con un filtro y que sean del tipo Gmail,
+     * sin usar un ciclo.
+     * @return Long
+     */
     public Long dominioDeGmail(){
     return list.stream().filter( correo -> correo.contains("gmail")).count();
     }
+    /**
+     * Método para saber la cantidad de correos que hay con un filtro y que sean del tipo Hotmail,
+     * sin usar un ciclo.
+     * @return Long
+     */
     public Long dominioDeHotmail(){
     return list.stream().filter( correo -> correo.contains("hotmail")).count();
     }
+    /**
+     * Método para saber la cantidad de correos que hay con un filtro y que sean del tipo outlook,
+     * sin usar un ciclo.
+     * @return Long
+     */
     public Long dominioDeOutlook(){
     return  list.stream().filter( correo -> correo.contains("outlook")).count();
     }
