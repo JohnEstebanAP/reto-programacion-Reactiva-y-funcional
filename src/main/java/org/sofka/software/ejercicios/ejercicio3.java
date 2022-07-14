@@ -4,16 +4,26 @@ import org.sofka.software.utilities.Start;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.stream.Stream;
 
+/**
+ * [Clase controladora del ejercicio 3.]
+ * Esta clase extiende de Start para ser iniciada desde el menu principal.
+ *
+ * Calculadora derivación e integración de una función matemática con el X en el denominador
+ *
+ * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+ * @version 1.0.0
+ * @since Esta presente desde la version 1.0.0
+ */
 public class ejercicio3 extends Start {
 
-  // Ejercicio 3 - valor 20%
-  // Programación Funcional
-  // Crear dos funciones, una para resolver derivadas y otra integrales,
-  // pero esta se deben usar si quiero hacer la contraria,
-  // es decir, si quiero hacer una derivada inversa o una integral inversa.
-  @Override
+    /**
+     * [Método Controlador llamado Start para ejecutar las operaciones a aplicar de la calculadora]
+     *
+     * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+     * @since [1.0.0]
+     */
+    @Override
   public void start() {
 
     final String SEPARATOR =
@@ -43,7 +53,13 @@ public class ejercicio3 extends Start {
     makeLog("\n{0} \n{1} {2} \n{0}", new Object[] {SEPARATOR, message1, imprimirResultados});
   }
 
-  public String derivarXenElDenominador(Double coeficiente, Double exponente) {
+    /**
+     * [Método para derivar cuando X se encuentra en el denominador]
+     * @param coeficiente Double
+     * @param exponente Double
+     * @return String
+     */
+    public String derivarXenElDenominador(Double coeficiente, Double exponente) {
 
     BiFunction<Double, Double, Double> coeficienteMultiplicado =
         (coeficientefun, exponentefun) -> {
@@ -69,6 +85,13 @@ public class ejercicio3 extends Start {
         .concat(exponenteRestado.apply(exponente).toString());
   }
 
+
+    /**
+     * [Método para Integrar cuando X se encuentra en el denominador]
+     * @param coeficiente Double
+     * @param exponente Double
+     * @return String
+     */
   public String integrarXenElDenominador(Double coeficiente, Double exponente) {
 
     Function<Double, Double> coeficienteMultiplicado =
