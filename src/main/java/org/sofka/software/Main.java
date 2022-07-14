@@ -98,7 +98,7 @@ public class Main extends Menu {
     public static void selectionIntro(int option) {
         option = option - 1;
         if (option < 4 && option >= 0) {
-            logMessage("La opción seleccionada es", elemenstMenu().get(option + 3));
+            logMessage("La opción seleccionada es", elemenstMenu().get(option +5));
             Main.puntos.get(option).start();
             logMessage("Por favor presione una tecla y enter para continuar","");
             Scanner scanner = new Scanner(System.in);

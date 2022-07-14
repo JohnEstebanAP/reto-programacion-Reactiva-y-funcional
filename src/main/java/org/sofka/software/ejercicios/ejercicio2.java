@@ -47,7 +47,9 @@ public class ejercicio2 extends Start {
             "menso",
             "ñero",
             "puto",
-            "pirobo"
+            "pirobo",
+            "pirobos",
+            "hijueputas"
     );
     @Override
     public void start() {

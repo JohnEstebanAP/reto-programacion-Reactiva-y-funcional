@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="140cc582-6de6-432a-85b6-61330359682f" name="Changes" comment="ejercicio2 Completo">
+    <list default="true" id="140cc582-6de6-432a-85b6-61330359682f" name="Changes" comment="ejercicio3 Completo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/ejercicios/ejercicio3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/EstadosDelosCorreos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/operadores/EstadosDelosCorreos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sofka/software/utilities/utilsEmails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sofka/software/utilities/DataUtilsEmails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657738500706</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ejercicio3 Completo">
+      <created>1657829107029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657829107029</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +156,7 @@
     <MESSAGE value="ejercicio1 OperadorD y E" />
     <MESSAGE value="ejercicio1 Completo" />
     <MESSAGE value="ejercicio2 Completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ejercicio2 Completo" />
+    <MESSAGE value="ejercicio3 Completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercicio3 Completo" />
   </component>
 </project>

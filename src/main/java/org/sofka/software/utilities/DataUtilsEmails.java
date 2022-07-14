@@ -3,7 +3,7 @@ package org.sofka.software.utilities;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class utilsEmails {
+public class DataUtilsEmails {
     //38 correos
     static final private List<Email> correos = List.of(
             new Email("esteban.ea145@gmail.com", false),

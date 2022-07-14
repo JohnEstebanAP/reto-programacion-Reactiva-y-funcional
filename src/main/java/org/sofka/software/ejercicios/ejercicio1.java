@@ -5,8 +5,8 @@ import org.sofka.software.utilities.Start;
 
 import java.util.List;
 
-import static org.sofka.software.utilities.utilsEmails.consultarEmails;
-import static org.sofka.software.utilities.utilsEmails.consultarEmailsYEstados;
+import static org.sofka.software.utilities.DataUtilsEmails.consultarEmails;
+import static org.sofka.software.utilities.DataUtilsEmails.consultarEmailsYEstados;
 
 
 public class ejercicio1 extends Start {
