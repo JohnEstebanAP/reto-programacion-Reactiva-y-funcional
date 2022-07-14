@@ -51,15 +51,14 @@ public class EstadosDelosCorreos {
         .toList();
   }
 
-
   public List<Email> eliminarCorreosRepetidos(List<Email> list){
     List<Email> listEmails = list.stream()
             .map(email -> email.email())
             .distinct()
             .map(email->  {
-              Email email2 =  new Email(email, false);
-              return email2;
+              return new Email(email, false);
             }).toList();
     return listEmails;
   }
+
 }
